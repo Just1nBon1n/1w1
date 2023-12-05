@@ -40,7 +40,7 @@ body {
 }
 
 #entete {
-    background-color: goldenrod;
+    background-color: linear-gradient(90deg, #ff0000, rgb(25, 0, 255));
     min-height: 1vh;
     position: sticky;
     top: 0;
