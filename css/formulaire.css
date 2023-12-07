@@ -1,37 +1,37 @@
-/*<div class="global" id="inscription">
-<section>
-    <h2>Inscription</h2>
+/*
     <form action="" class="formulaire">
-        <label class="etiquette__nom" for="input__nom">Nom</label>
-        <input type="text" class="input__nom">
-        <label class="etiquette__prenom" for="input__prenom">Prenom</label>
-        <input type="text" class="input__prenom">
-        <label class="etiquette__tel" for="input__tel">Telephone</label>
-        <input type="text" class="input__tel">
-    </form>
-</section>
-</div>*/
+      <label  class="etiquette__nom" for="input__nom">Nom</label>
+      <input type="text" id="input__nom">
+      <label  class="etiquette__prenom" for="input__prenom">Prénom</label>
+      <input type="text" id="input__prenom">
+      <label  class="etiquette__tel" for="input__tel">Téléphone</label>
+      <input type="text" id="input__tel">
+    <fieldset class="form__chk">
 
-.formulaire {
-    display: flex;
+*/
+
+/*
+https://www.w3schools.com/html/html_forms.asp
+*/
+
+.formulaire{
+    display : flex;
     flex-direction: column;
-    gap: 15px;
+    gap : 15px;
 }
 
-.formulaire label {
+.formulaire label{
 
 }
-
-.formulaire input[type=text] {
-    width: 400px;
+.formulaire input[type="text"]{
+width : 400px;
 }
 
 .form__chk {
-    display: flex;
-    gap: 5px;
+    display : flex;
+    gap : 5px;
 }
 
-.form__chk label {
+.form__chk label{
     padding-left: 25px;
 }
-
