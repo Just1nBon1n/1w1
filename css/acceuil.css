@@ -1,0 +1,76 @@
+/*<!--  section accueil  -->
+<div class="global" id="accueil">
+    <div class="acceuil">
+      <section class="acceuil__titre">
+      <h1>PORTFOLIO</h1>
+      </section>
+      <section class="acceuil__zoneTexte">
+        <section class="acceuil__auteur">
+        <h3>Justin Bonin</h3>
+        </section>
+        <section class="acceuil__cour">
+          <h3>582-1W1 - Mise en page Web</h3>
+          <h3>Techniques d'intégration multimédia</h3>
+        </section>
+        <section class="acceuil__ecole">
+          <h3>Collège de Maisonneuve</h3>
+        </section>
+        <section class="acceuil__github">
+          <a href="https://github.com/Just1nBon1n">Adresse de ma page Github</a>
+        </section>
+      </section>
+    </div>
+</div>*/
+
+#accueil {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-image: url("../images/imageAcceuil.jpg");
+    background-size: cover;
+    background-position: center;
+    color: aliceblue;
+}
+
+.acceuil__titre h1 {
+    font-size: 80px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*Fond de la zone de texte*/
+.acceuil__zoneTexte {
+    display: flex;
+    background-color: rgba(30, 45, 50, 0.5);
+    border-radius: 30px;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+}
+
+.acceuil__zoneTexte h3 {
+    margin: 2px;
+    font-weight: lighter;
+}
+
+.acceuil__auteur h3 {
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.acceuil__cour {
+
+}
+
+.acceuil__ecole {
+
+}
+
+.acceuil__github {
+    padding-top: 10px;
+}
+
+.acceuil__github a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}

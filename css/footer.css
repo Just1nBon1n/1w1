@@ -1,21 +1,71 @@
-/*<div class="global" id="piedpage">
+/*<!-- //////////////////////////////////////////////////////   FOOTER   /////////////////////  -->
+
+<!-- secton footer -->
+<div class="global" id="piedpage">
   <footer>
     <!-- premiere ligne -->
     <div class="footer__conteneur__1">
-        <section class="footer__adresse"></section>
-        <section class="footer__lien"></section>
-        <section class="footer__texte"></section>
+      <section class="footer__adresse">
+
+          <ul>
+              <li><a href="https://cmaisonneuve.qc.ca">Collège de Maisonneuve</a></li>
+              <li>3800 Sherbrooke-est</li>
+              <li>Montréal</li>
+              <li>H1X 2A2</li>
+              <li>Tel: 514-254-7131</li>
+          </ul>
+
+      </section>
+      <section class="footer__texte">
+
+          <p>
+            Ce programme te forme à la création de jeux vidéos, à la programmation web et à la
+            conception d'environnements interactifs. Tu apprendras les bases et les compétences 
+            nécessaires tout en travaillant sur des projets concrets. Stages rémunérés et bourses 
+            sont inclus pour une transition fluide vers le monde professionnel.
+          </p>
+          
+      </section>
     </div>
     <!-- deuxieme ligne -->
     <div class="footer__conteneur__2">
-        <section class="image"></section>
-        <section class="footer__lien"></section>
+      <section class="footer__image">
+
+          <figure>
+            <img src="images/logoTIM.png" alt="">
+          </figure>
+
+      </section>
+      <section class="footer__lien">
+
+          <ul>
+              <li><a href="https://www.cmaisonneuve.qc.ca/programme/integration-multimedia/">->  Intégration Multimédia | Technique</a></li>
+              <li><a href="https://www.facebook.com/maisonneuvetim/">->  Facebook TIM</a></li>
+              <li><a href="https://www.youtube.com/@TIMaisonneuve">->  Youtube TIM</a></li>
+              <li><a href="https://www.instagram.com/maisonneuvetim/">->  instagram TIM</a></li>
+          </ul>
+
+      </section>
     </div>
     <!-- troisieme ligne -->
     <div class="footer__conteneur__3">
-        <section class="icone"></section>
+
+      <img src="https://s2.svgbox.net/social.svg?ic=github&color=rgb(245, 245, 245)" width="32" height="32">
+      <img src="https://s2.svgbox.net/social.svg?ic=google&color=rgb(245, 245, 245)" width="32" height="32">
+      <img src="https://s2.svgbox.net/social.svg?ic=patreon&color=rgb(245, 245, 245)" width="32" height="32">
+      <img src="https://s2.svgbox.net/social.svg?ic=youtube&color=rgb(245, 245, 245)" width="32" height="32">
+
     </div>
-  </footer>*/
+
+    <!-- quatrieme ligne -->
+    <div class="footer__conteneur__4">
+
+      <p>Avis de confidentialité | Privacy Notice</p>
+
+    </div>  
+  </footer>
+
+</div>*/
 
 #piedpage > footer {
     display: flex;
@@ -25,19 +75,68 @@
 
 #piedpage > footer > div {
     display: flex;
-    border: 1px solid #aaa;
-}
-
-#piedpage > footer > div > section {
-    border: 1px dotted #666;
 }
 
 .footer__adresse ul,
 .footer__lien ul {
-    list-style-type: none;
+    list-style-type: none;  
+}
+
+#piedpage {
+    background-color: black;
+    color: whitesmoke;
+    padding: 30px 0 30px 0;
+    height: auto;
+    min-height: 10vh;
+}
+
+.footer__adresse a, .footer__lien a {
+    font-weight: bold;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.footer__conteneur__1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+}
+
+.footer__conteneur__1 .footer__adresse,
+.footer__conteneur__1 .footer__texte {
+  display: flex;
+  justify-content: center; /* Centre le contenu verticalement */
+  text-align: center; /* Centre le texte horizontalement */
+}
+
+.footer__conteneur__1 .footer__texte {
+    font-size: 14px;
+    width: 36%;
+}
+
+.footer__conteneur__2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer__conteneur__2 .footer__image,
+.footer__conteneur__2 .footer__lien {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer__conteneur__2 .footer__image img {
+    max-width: 100px;
+    max-height: 100px;
 }
 
 .footer__conteneur__3 {
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
+}
+
+.footer__conteneur__4 .footer__note {
+    text-align: center;
 }
