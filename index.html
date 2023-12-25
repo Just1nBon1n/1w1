@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="css/entete.css">
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/acceuil.css">
+    <link rel="stylesheet" href="css/article.css">
+    <link rel="stylesheet" href="css/tableau.css">
+    <link rel="stylesheet" href="css/video.css">
     <link rel="stylesheet" href="css/galerie.css">
     <link rel="stylesheet" href="css/formulaire.css">
     <link rel="stylesheet" href="css/footer.css">
@@ -112,7 +115,90 @@
   <div class="global" id="tableau">
     <!-- couleur de fond -->
     <div class="tableau__fond">
-      <h2>Tableau</h2>
+      <section class="tableau__titre">
+        <h2>Tableau</h2>
+        <caption>Horaire session automne 2023</caption>
+      </section>
+      <table>
+          <tr>
+              <th></th>
+              <th>LUNDI</th>
+              <th>MARDI</th>
+              <th>MERCREDI</th>
+              <th>JEUDI</th>
+              <th>VENDREDI</th>
+          </tr>
+          <tr>
+              <th>8h</th>
+              <td></td>   <!-- Lundi -->
+              <td></td>   <!-- Mardi -->
+              <td></td>
+              <td rowspan="3" class="conceptionGraphique">Conception graphique</td>
+              <td rowspan="2" class="francais">Francais</td>
+          </tr>
+          <tr>
+              <th>9h</th>
+              <td></td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <th>10h</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td rowspan="2" class="creationVideo">Creation video</td>
+          </tr>
+          <tr>
+              <th>11h</th>
+              <td></td>
+              <td></td>
+              <td rowspan="2" class="animation">Animation</td>
+              <td></td>
+          </tr>
+          <tr>
+              <th>12h</th>
+              <td rowspan="2" class="francais">Francais</td>
+              <th rowspan="2" class="pauseCommu">Pause commune</th>
+              <th rowspan="2" class="pauseCommu">Pause commune</th>
+              <td></td>
+          </tr>
+          <tr>
+              <th>13h</th>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <th>14h</th>
+              <td></td>
+              <td rowspan="3" class="web">Mise en page web</td>
+              <td rowspan="3" class="creationVideo">Creation video</td>
+              <td rowspan="2" class="web">Mise en page web</td>
+              <td rowspan="3" class="animation">Animation</td>
+          </tr>
+          <tr>
+              <th>15h</th>
+              <td rowspan="3" class="conceptionGraphique">Conception graphique</td>
+          </tr>
+          <tr>
+              <th>16h</th>
+          </tr>
+          <tr>
+              <th>17h</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <th>18h</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+          </tr> 
+      </table>
     </div>
   </div>
 
@@ -121,6 +207,51 @@
     <!-- couleur de fond -->
     <div class="article__fond">
       <h2>Articles</h2>
+        <section class="article">
+          <div class="article__1">
+            <section class="article__image">
+              <img src="images/article1.png" alt="">
+              <figcaption>TP3 Affiche de film</figcaption>
+            </section>
+            <section class="article__texte">
+              <p>	Agent Wat Ergun de son vrais nom Nicolas Gemme est en mission pour récupérer des documents
+                classifier pour le gouvernement du Canada. Reconnaissable pars ses vêtements gris mais surtout
+                ses lunettes de soleil noir il traverse le monde pour sa mission. Derrière les lunettes se cache
+                en fait un homme très sérieux. Passant en premier par le Japon, il obtient l’information que
+                ces informations sont détenues dans un centre de recherches secret caché dans la forêt
+                amazonienne. C’est en se rendant au brésil qu’il rencontre son homologue ennemi Russe : l’agent
+                Dimitri Kozlov. Il se rend compte qu’il n’est plus le seul à avoir cette mission donc notre agent 
+                met les bouché double pour atteindre son objectif. Avec l’aide des autorités locale il arrive à 
+                la base secrète avant le russe. Après s’être infiltré Wat récupère les documents sans trop de 
+                difficulté et s’enfuie pour tomber face à face sur Dimtri avec des renforts. S’ensuit une course 
+                poursuite à travers la jungle. Après un combat acharné avec son homologue l’agent Ergun prend le 
+                dessus et parviens à s’échapper mais le russe le prévient de faire attention au renseignement 
+                qu’il possède. Dans le voyage de retour au Canada Wat intrigué jette un coup d’œil au document 
+                et se rend compte qu’il s’agit des plans d’une arme qui pourrait causer la fin du monde entier. 
+                Après réflexion, il choisit de s’évader de l’avion en parachute pour vivre une vie de fugitif 
+                international avec renseignement dangereux car il veut a tout prit garder les plans hors de 
+                porter de main des gouvernements.</p>
+            </section>
+          </div>
+        </section>
+      <section class="article">
+        <div class="article__2">
+          <section class="article__image">
+            <img src="images/article2.png" alt="">
+            <figcaption>TP4 Maquette web</figcaption>
+          </section>
+          <section class="article__texte">
+            <p>Avec ce projet, j’ai l’intention de présenter les affiches de film réalisé par notre classe pour 
+              la revue CINEMA. Le public cible risque d’être des gens de notre âge donc je vais opter pour un 
+              design minimaliste et moderne comme pour mon affiche de film. Je vais essayer de réduire les 
+              contenus textuels au minimum pour garder l’attention des utilisateurs et mettre l’emphase sur les 
+              projets. Il sera construit avec une page de présentation, suivie d’une page avec les affiches de 
+              tous les films, ensuite viendrais une page qui présenterais mon projet et pour finir les 
+              références de la page. Pour la navigation, je pensais à n’avoir que des liens internes dans la 
+              pages et réduire les liens externes au maximum.</p>
+          </section>
+        </div>
+      </section>  
     </div>
   </div>
 
@@ -128,7 +259,15 @@
   <div class="global" id="video">
     <!-- couleur de fond -->
     <div class="video__fond">
-      <h2>Vidéo</h2>
+      <section class="video__titre">
+        <h2>Vidéo</h2>
+      </section>
+      <section class="video__texte">
+        <h3>Présentation de notre travail final en création vidéo</h3>
+      </section>
+      <section class="video__video">
+        <iframe width="660" height="415" src="https://www.youtube.com/embed/aTeSA-k6Z9k?si=zrY0k0nhcNkrbQqH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </section>
     </div>
   </div>
 
@@ -138,22 +277,36 @@
     <div class="galerie__fond">
       <h2>Galerie</h2>
       <figure class="galerie">
-        <figure class="galerie__figure">
-          <img class="galerie__img" src="images/maisonneuve.jpg" alt="">
-          <figcaption class="galerie__caption"></figcaption>
-        </figure>
-        <figure class="galerie__figure">
-          <img class="galerie__img" src="images/maisonneuve2.jpg" alt="">
-          <figcaption class="galerie__caption"></figcaption>
-        </figure>
-        <figure class="galerie__figure">
-          <img class="galerie__img" src="images/maisonneuve3.jpg" alt="">
-          <figcaption class="galerie__caption"></figcaption>
-        </figure>
-        <figure class="galerie__figure">
-          <img class="galerie__img" src="images/maisonneuve4.jpg" alt="">
-          <figcaption class="galerie__caption"></figcaption>
-        </figure>
+        <h3>Exercises de photographie</h3>
+        <figure class="galerie__photo">
+          <figure class="galerie__figure">
+            <img class="galerie__img" src="images/galerie1.JPG" alt="">
+            <figcaption class="galerie__caption"></figcaption>
+          </figure>
+          <figure class="galerie__figure">
+            <img class="galerie__img" src="images/galerie2.JPG" alt="">
+            <figcaption class="galerie__caption"></figcaption>
+          </figure>
+          <figure class="galerie__figure">
+            <img class="galerie__img" src="images/galerie3.jpg" alt="">
+            <figcaption class="galerie__caption"></figcaption>
+          </figure>
+        </figure>  
+        <h3>Exercices de portrait</h3>
+        <figure class="galerie__portrait">
+          <figure class="galerie__figure">
+            <img class="galerie__img" src="images/galerie4.JPG" alt="">
+            <figcaption class="galerie__caption"></figcaption>
+          </figure>
+          <figure class="galerie__figure">
+            <img class="galerie__img" src="images/galerie5.JPG" alt="">
+            <figcaption class="galerie__caption"></figcaption>
+          </figure>
+          <figure class="galerie__figure">
+            <img class="galerie__img" src="images/galerie6.JPG" alt="">
+            <figcaption class="galerie__caption"></figcaption>
+          </figure>
+        </figure> 
       </figure>
     </div>
   </div> 

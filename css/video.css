@@ -1,0 +1,40 @@
+/*<!--  section video  -->
+<div class="global" id="video">
+  <!-- couleur de fond -->
+  <div class="video__fond">
+    <section class="video__titre">
+      <h2>Vidéo</h2>
+    </section>
+    <section class="video__texte">
+      <h3>Présentation de notre travail final en création vidéo</h3>
+    </section>
+    <section class="video__video">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/aTeSA-k6Z9k?si=zrY0k0nhcNkrbQqH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </section>
+  </div>
+</div>*/
+
+.video__fond {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: aliceblue;
+}
+
+.video__titre h2 {
+    margin-top: 10px; 
+}
+
+.video__video{
+    filter : blur(2px) grayscale(100%);
+    transition: all .5s;
+    margin-top: 30px;
+}
+
+.video__video:hover {
+     filter :none;
+}
+
+
+
+

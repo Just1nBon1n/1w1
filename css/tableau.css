@@ -1,0 +1,148 @@
+/*
+  <!--  section tableau  -->
+  <div class="global" id="tableau">
+    <!-- couleur de fond -->
+    <div class="tableau__fond">
+      <caption>Session automne 2023</caption>
+      <table>
+          <tr>
+              <th></th>
+              <th>LUNDI</th>
+              <th>MARDI</th>
+              <th>MERCREDI</th>
+              <th>JEUDI</th>
+              <th>VENDREDI</th>
+          </tr>
+          <tr>
+              <th>8h</th>
+              <td></td>   <!-- Lundi -->
+              <td></td>   <!-- Mardi -->
+              <td></td>
+              <td rowspan="3" class="conceptionGraphique">Conception graphique</td>
+              <td rowspan="2" class="francais">Francais</td>
+          </tr>
+          <tr>
+              <th>9h</th>
+              <td></td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <th>10h</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td rowspan="2" class="creationVideo">Creation video</td>
+          </tr>
+          <tr>
+              <th>11h</th>
+              <td></td>
+              <td></td>
+              <td rowspan="2" class="animation">Animation</td>
+              <td></td>
+          </tr>
+          <tr>
+              <th>12h</th>
+              <td rowspan="2" class="francais">Francais</td>
+              <th rowspan="2" class="pauseCommu">Pause commune</th>
+              <th rowspan="2" class="pauseCommu">Pause commune</th>
+              <td></td>
+          </tr>
+          <tr>
+              <th>13h</th>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <th>14h</th>
+              <td></td>
+              <td rowspan="3" class="web">Mise en page web</td>
+              <td rowspan="3" class="creationVideo">Creation video</td>
+              <td rowspan="2" class="web">Mise en page web</td>
+              <td rowspan="3" class="animation">Animation</td>
+          </tr>
+          <tr>
+              <th>15h</th>
+              <td rowspan="3" class="conceptionGraphique">Conception graphique</td>
+          </tr>
+          <tr>
+              <th>16h</th>
+          </tr>
+          <tr>
+              <th>17h</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <th>18h</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+          </tr> 
+      </table>
+    </div>
+  </div>
+*/
+
+.tableau__titre h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}  
+
+.tableau__titre {
+    color: aliceblue;
+    margin-bottom: 10px;
+}
+
+.tableau__fond {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+table {
+    border: 2px solid rgb(0, 0, 0);
+    border-collapse: collapse;
+    background-color: aliceblue;
+}
+
+td, th {
+    border: 1px solid #444;
+    padding: 4px;
+}
+
+th {
+    background-color: #aaa;
+    padding: 5px;
+    width: 8rem;
+}
+
+.conceptionGraphique {
+    background-color: rgba(0, 128, 0, 0.479);
+}
+
+.francais {
+    background-color: rgba(255, 0, 0, 0.493);
+}
+
+.creationVideo {
+    background-color: rgba(0, 0, 255, 0.502);
+}
+
+.animation {
+    background-color: rgba(255, 255, 0, 0.482);
+}
+
+.web {
+    background-color: rgba(128, 0, 128, 0.518);
+}
+
+.pauseCommu {
+    background-color: #444;
+    font-style: italic;
+    color: #aaa;
+}

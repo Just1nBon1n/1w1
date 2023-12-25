@@ -1,0 +1,91 @@
+/*<!--  section article  -->
+<div class="global" id="article">
+  <!-- couleur de fond -->
+  <div class="article__fond">
+    <h2>Articles</h2>
+    <section class="article__1">
+      <section class="article__image">
+        <img src="images/article1.png" alt="">
+      </section>
+      <section class="article__texte">
+        <p>	Agent Wat Ergun de son vrais nom Nicolas Gemme est en mission pour récupérer des documents
+          classifier pour le gouvernement du Canada. Reconnaissable pars ses vêtements gris mais surtout
+          ses lunettes de soleil noir il traverse le monde pour sa mission. Derrière les lunettes se cache
+          en fait un homme très sérieux. Passant en premier par le Japon, il obtient l’information que
+          ces informations sont détenues dans un centre de recherches secret caché dans la forêt
+          amazonienne. C’est en se rendant au brésil qu’il rencontre son homologue ennemi Russe : l’agent
+          Dimitri Kozlov. Il se rend compte qu’il n’est plus le seul à avoir cette mission donc notre agent 
+          met les bouché double pour atteindre son objectif. Avec l’aide des autorités locale il arrive à 
+          la base secrète avant le russe. Après s’être infiltré Wat récupère les documents sans trop de 
+          difficulté et s’enfuie pour tomber face à face sur Dimtri avec des renforts. S’ensuit une course 
+          poursuite à travers la jungle. Après un combat acharné avec son homologue l’agent Ergun prend le 
+          dessus et parviens à s’échapper mais le russe le prévient de faire attention au renseignement 
+          qu’il possède. Dans le voyage de retour au Canada Wat intrigué jette un coup d’œil au document 
+          et se rend compte qu’il s’agit des plans d’une arme qui pourrait causer la fin du monde entier. 
+          Après réflexion, il choisit de s’évader de l’avion en parachute pour vivre une vie de fugitif 
+          international avec renseignement dangereux car il veut a tout prit garder les plans hors de 
+          porter de main des gouvernements.</p>
+      </section>
+    </section>
+    <section class="article__2">
+      <section class="article__image">
+        <img src="images/article2.png" alt="">
+      </section>
+      <section class="article__texte">
+        <p>Avec ce projet, j’ai l’intention de présenter les affiches de film réalisé par notre classe pour 
+          la revue CINEMA. Le public cible risque d’être des gens de notre âge donc je vais opter pour un 
+          design minimaliste et moderne comme pour mon affiche de film. Je vais essayer de réduire les 
+          contenus textuels au minimum pour garder l’attention des utilisateurs et mettre l’emphase sur les 
+          projets. Il sera construit avec une page de présentation, suivie d’une page avec les affiches de 
+          tous les films, ensuite viendrais une page qui présenterais mon projet et pour finir les 
+          références de la page. Pour la navigation, je pensais à n’avoir que des liens internes dans la 
+          pages et réduire les liens externes au maximum.</p>
+      </section>
+    </section>
+  </div>
+</div>
+*/
+
+.article__fond {
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+}
+  
+.article {
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+padding: 20px;
+justify-content: space-around;
+align-items: flex-start;
+align-content: flex-start;
+} 
+
+.article__fond h2 {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+}
+
+.article__1,
+.article__2 {
+flex: 1; /* Les deux sections occupent une part égale de l'espace disponible */
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+gap: 20px;
+}
+
+.article__image {
+display: flex;
+width: 250px;
+}
+
+.article__image img {
+  padding-bottom: 15px;
+}
+
+.article__texte {
+  width: 50%;
+}

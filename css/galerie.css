@@ -1,76 +1,88 @@
 /*
+  <!--  section galerie  -->
   <div class="global" id="galerie">
-    <section>
+    <!-- couleur de fond -->
+    <div class="galerie__fond">
       <h2>Galerie</h2>
       <figure class="galerie">
-        <figure class="galerie__figure">
-          <img class="galerie__img" src="images/maisonneuve.jpg" alt="">
-          <figcaption class="galerie__caption"></figcaption>
-        </figure>
-        <figure class="galerie__figure">
-          <img class="galerie__img" src="images/maisonneuve2.jpg" alt="">
-          <figcaption class="galerie__caption"></figcaption>
-        </figure>
-        <figure class="galerie__figure">
-          <img class="galerie__img" src="images/maisonneuve3.jpg" alt="">
-          <figcaption class="galerie__caption"></figcaption>
-        </figure>
-        <figure class="galerie__figure">
-          <img class="galerie__img" src="images/maisonneuve4.jpg" alt="">
-          <figcaption class="galerie__caption"></figcaption>
-        </figure>
+        <figure class="galerie__photo">
+          <h3>Exercises de photographie</h3>
+          <figure class="galerie__figure">
+            <img class="galerie__img" src="images/galerie1.JPG" alt="">
+            <figcaption class="galerie__caption"></figcaption>
+          </figure>
+          <figure class="galerie__figure">
+            <img class="galerie__img" src="images/galerie2.JPG" alt="">
+            <figcaption class="galerie__caption"></figcaption>
+          </figure>
+          <figure class="galerie__figure">
+            <img class="galerie__img" src="images/galerie3.jpg" alt="">
+            <figcaption class="galerie__caption"></figcaption>
+          </figure>
+        </figure>  
+        <figure class="galerie__portrait">
+          <h3>Exercices de portrait</h3>
+          <figure class="galerie__figure">
+            <img class="galerie__img" src="images/galerie4.JPG" alt="">
+            <figcaption class="galerie__caption"></figcaption>
+          </figure>
+          <figure class="galerie__figure">
+            <img class="galerie__img" src="images/galerie5.JPG" alt="">
+            <figcaption class="galerie__caption"></figcaption>
+          </figure>
+          <figure class="galerie__figure">
+            <img class="galerie__img" src="images/galerie6.JPG" alt="">
+            <figcaption class="galerie__caption"></figcaption>
+          </figure>
+        </figure> 
       </figure>
-   </section>
+    </div>
   </div> 
+</div>
 */
 
+.galerie__fond {
+  color: aliceblue;
+}
 
-
-/* Conteneur principal */
-.galerie{
-    display: flex;
-    flex-wrap: wrap;
-    gap : 20px;
-    padding : 20px;
-    justify-content: flex-start;
-    align-items: flex-start;
-    align-content: flex-start;
+.galerie {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
 } 
 
 
 
-/* Conteneur d'image */
-.galerie__figure{
-    width: 200px;
-    position : relative;
-   /* height : 100px; */
-   /* border : 1px solid #aaa;*/
- transform: scale(1);
+.galerie__photo,
+.galerie__portrait {
+  flex: 1; /* Les deux sections occupent une part égale de l'espace disponible */
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.galerie__figure {
+  width: 200px;
+  position: relative;
+  transform: scale(1);
   transition: all .5s;
 }
-/* image */
-.galerie__img{
- 
-    width : 100%;
-  /*  filter: grayscale(100%);*/
-  /* filter : hue-rotate(170deg);  */
-  /* on ajoute plusieurs filtres à la même propriété filter */
-   filter : blur(2px) grayscale(100%) ;
-   
-   
 
-}
-.galerie__figure:hover{
-   
-    transform: scale(1.5);
-    z-index : 10;
-}
-.galerie__figure:hover  .galerie__img {
-     filter :none;
+.galerie__img {
+  display: flex;
+  width: 100%;
+  filter: blur(2px) grayscale(100%);
 }
 
+.galerie__figure:hover {
+  transform: scale(1.25);
+  z-index: 5;
+}
 
-/* figcaption */
-.galerie__caption{
-    
+.galerie__figure:hover .galerie__img {
+  filter: none;
 }

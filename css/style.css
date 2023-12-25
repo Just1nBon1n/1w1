@@ -56,11 +56,11 @@ body {
 
 /*Couleur de fond des différente section*/
 .inscription__fond {
-    background-color: aqua;
+    background-color: rgb(42, 69, 69);
 }
 
 .tableau__fond {
-    background-color: rgb(152, 142, 26);
+    background-color: rgb(43, 43, 47);
 }
 
 .article__fond {
@@ -68,12 +68,11 @@ body {
 }
 
 .video__fond {
-    background-color: rgb(128, 88, 36);
+    background-color: rgb(16, 20, 46);
 }
 
-/*couleur de fond de la section*/
 .galerie__fond {
-    background-color: aliceblue;
+    background-color: rgb(25, 32, 38);
 }
 
 /* ------------------------------------------------------------------------------- */
@@ -86,9 +85,8 @@ h2 {
     font-size: clamp(1.75rem, 0.0833rem + 5.3333vw, 3.75rem);
 } 
 
-h2 {
-    margin-top : 10vh;
-}
-
+h3 {
+    font-size: clamp(0.7375rem, -0.3646rem + 4.1667vw, 1rem);
+} 
 
 

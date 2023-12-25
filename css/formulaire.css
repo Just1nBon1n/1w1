@@ -1,12 +1,30 @@
 /*
-    <form action="" class="formulaire">
-      <label  class="etiquette__nom" for="input__nom">Nom</label>
-      <input type="text" id="input__nom">
-      <label  class="etiquette__prenom" for="input__prenom">Prénom</label>
-      <input type="text" id="input__prenom">
-      <label  class="etiquette__tel" for="input__tel">Téléphone</label>
-      <input type="text" id="input__tel">
-    <fieldset class="form__chk">
+  <!--  section inscription  -->
+  <div class="global" id="inscription">
+    <!-- couleur de fond -->
+    <div class="inscription__fond">
+      <h2>Inscription</h2>
+      <form action="" class="formulaire">
+        <label  class="etiquette__nom" for="input__nom">Nom</label>
+        <input type="text" id="input__nom" placeholder="Votre nom de famille">
+        <label  class="etiquette__prenom" for="input__prenom">Prénom</label>
+        <input type="text" id="input__prenom" placeholder="Votre prénom">
+        <label  class="etiquette__tel" for="input__tel">Téléphone</label>
+        <input type="text" id="input__tel" placeholder="Votre téléphone ">
+        <fieldset class="form__chk">
+          <legend>Les langages que vous maîtrisez:</legend>
+          <label for="input__html" class="etiquette__lang">HTML/CSS</label>
+          <input type="checkbox"  id="input__html">
+          <label for="input__js" class="etiquette__js">JS</label>
+          <input type="checkbox"  id="input__js">
+          <label for="input__php" class="etiquette__php">PHP</label>
+          <input type="checkbox"  id="input__php">
+          <label for="input__sql" class="etiquette__sql">SQL</label>
+          <input type="checkbox"  id="input__sql">
+        </fieldset>
+      </form>
+    </div>
+  </div>
 
 */
 
@@ -14,15 +32,30 @@
 https://www.w3schools.com/html/html_forms.asp
 */
 
+.inscription__fond {
+    color: aliceblue;
+}
+
+.inscription__fond h2 {
+    padding: 30px;
+}
+
 .formulaire{
     display : flex;
     flex-direction: column;
+    justify-content: center;
     gap : 15px;
+}
+
+.formulaire h2 {
+    display: flex;
+    align-items: center;
 }
 
 .formulaire label{
 
 }
+
 .formulaire input[type="text"]{
 width : 400px;
 }
